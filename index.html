@@ -27,7 +27,8 @@
             background-color: #B065FF;
         }
         img {
-            width: 200px;
+            width: 300px;
+            height: auto;
             border-radius: 10px;
         }
     </style>
@@ -35,7 +36,7 @@
 <body>
     <div class="container" id="question-box">
         <h2>Would you forgive me? 🥺</h2>
-        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cute cat gif">
+        <img src="https://media.tenor.com/5Xn0DqAOZb4AAAAC/sad-cat.gif" alt="Cute cat gif">
         <br>
         <button onclick="nextStep('yes')">Yes</button>
         <button onclick="nextStep('no')">No</button>
@@ -46,11 +47,11 @@
             let box = document.getElementById('question-box');
             if (answer === 'yes') {
                 box.innerHTML = `<h2>Thank you, baby! I love you so much! 💜</h2>
-                <img src='https://media.giphy.com/media/1xVbJ5Mt29ydT1t0qc/giphy.gif' alt='Sad man gif'>`;
+                <img src='https://media.tenor.com/F9ytLZYDt2gAAAAC/cry-man.gif' alt='Sad man gif' style='width: 300px;'>`;
             } else {
                 box.innerHTML = `<h2>I know that you are having a hard time forgiving me, baby. 😔</h2>
                 <p>I can wait for you while doing things right. I am so sorry for what I've done. I promise that I will be better and I wouldn’t hurt you anymore. I miss you so much and I hope you will forgive me anytime soon. 💜</p>
-                <img src='https://media.giphy.com/media/8YutMatqkTfSE/giphy.gif' alt='Sad hug gif'>`;
+                <img src='https://media.tenor.com/7R3S1ztZdp8AAAAC/hug-sad.gif' alt='Sad hug gif' style='width: 300px;'>`;
             }
         }
     </script>
