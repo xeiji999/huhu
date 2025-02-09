@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bik</title>
+    <style>
+        body {
+            background-color: #F5E6FF;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        button {
+            background-color: #D291FF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #B065FF;
+        }
+        img {
+            width: 200px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="question-box">
+        <h2>Would you forgive me, bik? 🥺</h2>
+        <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Cute cat gif">
+        <br>
+        <button onclick="nextStep('yes')">Yes</button>
+        <button onclick="nextStep('no')">No</button>
+    </div>
+    
+    <script>
+        function nextStep(answer) {
+            let box = document.getElementById('question-box');
+            if (answer === 'yes') {
+                box.innerHTML = `<h2>Thank you, baby! I love you so much! 💜</h2>
+                <img src='https://media.giphy.com/media/l0HlPjezGYjZSMG9e/giphy.gif' alt='Happy gif'>`;
+            } else {
+                box.innerHTML = `<h2>I know that you are having a hard time forgiving me, baby. 😔</h2>
+                <p>I can wait for you while doing things right. I am so sorry for what I've done. I promise that I will be better and I wouldn’t hurt you anymore. I miss you so much and I hope you will forgive me anytime soon. 💜</p>
+                <img src='https://media.giphy.com/media/8YutMatqkTfSE/giphy.gif' alt='Sad hug gif'>`;
+            }
+        }
+    </script>
+</body>
+</html>
